@@ -1,0 +1,25 @@
+﻿<Module>
+	<Name value="SceneEditorExtras"/>
+	<Id value="SceneEditorExtras"/>
+	<Version value="e1.5.9"/>
+	<DefaultModule value="false"/>
+	<SingleplayerModule value="true"/>
+	<MultiplayerModule value="false"/>
+	<Official value="false"/>
+	<DependedModules>
+		<DependedModule Id="Native"/>
+		<DependedModule Id="SandBoxCore"/>
+		<DependedModule Id="Sandbox"/>
+		<DependedModule Id="CustomBattle"/>
+		<DependedModule Id="StoryMode"/>
+	</DependedModules>
+	<SubModules>
+		<SubModule>
+			<Name value = "SceneEditorExtras"/>
+			<DLLName value = "SceneEditorExtras.dll"/>
+			<SubModuleClassType value = "SceneEditorExtras.SceneEditorExtrasSubModule"/>
+			<Tags/>
+		</SubModule>
+	</SubModules>
+</Module>
+
