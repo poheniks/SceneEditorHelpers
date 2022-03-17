@@ -8,8 +8,8 @@
     <ProjectGuid>{3A1CB5BA-0D8F-4566-B545-A4B87ACC2A86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SceneEditorExtras</RootNamespace>
-    <AssemblyName>SceneEditorExtras</AssemblyName>
+    <RootNamespace>SceneEditorHelpers</RootNamespace>
+    <AssemblyName>SceneEditorHelpers</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SceneEditorExtras\bin\Win64_Shipping_Client</OutputPath>
+    <OutputPath>..\..\..\..\..\..\Program Files %28x86%29\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SceneEditorHelpers\bin\Win64_Shipping_Client\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -257,20 +257,15 @@
     <!-- TODO -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SCEConstraintLib.cs" />
-    <Compile Include="SCEConstraintSet.cs" />
-    <Compile Include="SCEDynamicObjectBase.cs" />
-    <Compile Include="SCEMathLib.cs" />
-    <Compile Include="SceneEditorExtrasSubModule.cs" />
+    <Compile Include="SceneEditorHelpersSubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SCEObjectPhysLib.cs" />
     <Compile Include="SCEPathNavigatorAdvanced.cs" />
     <Content Include="SubModule.xml" />
   </ItemGroup>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /d /y "$(MSBuildProjectDirectory)\SubModule.xml" "C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SceneEditorExtras"
+    <PostBuildEvent>xcopy /d /y "$(MSBuildProjectDirectory)\SubModule.xml" "C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SceneEditorHelpers"
 
-xcopy /d /y "C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SceneEditorExtras\bin\Win64_Shipping_Client\SceneEditorExtras.dll" "C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SceneEditorExtras\bin\Win64_Shipping_wEditor\"</PostBuildEvent>
+xcopy /d /y "C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SceneEditorHelpers\bin\Win64_Shipping_Client\SceneEditorHelpers.dll" "C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SceneEditorHelpers\bin\Win64_Shipping_wEditor\"</PostBuildEvent>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

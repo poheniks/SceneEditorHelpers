@@ -1,7 +1,7 @@
 ﻿<Module>
-	<Name value="SceneEditorExtras"/>
-	<Id value="SceneEditorExtras"/>
-	<Version value="e1.5.9"/>
+	<Name value="SceneEditorHelpers"/>
+	<Id value="SceneEditorHelpers"/>
+	<Version value="e1.7.1"/>
 	<DefaultModule value="false"/>
 	<SingleplayerModule value="true"/>
 	<MultiplayerModule value="false"/>
@@ -15,9 +15,9 @@
 	</DependedModules>
 	<SubModules>
 		<SubModule>
-			<Name value = "SceneEditorExtras"/>
-			<DLLName value = "SceneEditorExtras.dll"/>
-			<SubModuleClassType value = "SceneEditorExtras.SceneEditorExtrasSubModule"/>
+			<Name value = "SceneEditorHelpers"/>
+			<DLLName value = "SceneEditorHelpers.dll"/>
+			<SubModuleClassType value = "SceneEditorHelpers.SceneEditorHelpersSubModule"/>
 			<Tags/>
 		</SubModule>
 	</SubModules>

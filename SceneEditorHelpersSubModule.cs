@@ -5,9 +5,9 @@ using TaleWorlds.InputSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 
-namespace SceneEditorExtras
+namespace SceneEditorHelpers
 {
-    public class SceneEditorExtrasSubModule : MBSubModuleBase
+    public class SceneEditorHelpersSubModule : MBSubModuleBase
     {
         public override void OnMissionBehaviorInitialize(Mission mission)
         {
@@ -15,17 +15,16 @@ namespace SceneEditorExtras
             //if (mission.HasMissionBehaviour<TaleWorlds.MountAndBlade.Source.Missions.SimpleMountedPlayerMissionController>())
             if (mission.HasMissionBehavior<TaleWorlds.MountAndBlade.Source.Missions.SimpleMountedPlayerMissionController>() | mission.HasMissionBehavior<CustomBattleAgentLogic>())
             {
-                mission.AddMissionBehavior(new SceneEditorBehavior());
-                InformationManager.DisplayMessage(new InformationMessage("Scene Editor Extras Loaded"));
+                mission.AddMissionBehavior(new SceneEditorTestMissionLogic());
+                InformationManager.DisplayMessage(new InformationMessage("Scene Editor Helpers Loaded"));
                 InformationManager.DisplayMessage(new InformationMessage("Press M to show help"));
             }
         }
     }
 
-    public class SceneEditorBehavior : MissionLogic
+    public class SceneEditorTestMissionLogic : MissionLogic
     {
         bool init;
-        bool isRagdolled = false;
         Agent mainPlayer, mainHorse;
         GameEntity editorSpawn;
         GameEntity teleFlag;
@@ -68,9 +67,7 @@ namespace SceneEditorExtras
                 if (Input.IsKeyPressed(InputKey.B))
                 {
                     if (editorSpawn != null) mainPlayer.TeleportToPosition(editorSpawn.GlobalPosition);
-
                     else mainPlayer.TeleportToPosition(new Vec3(0, 0, 0));
-
                 }
                 if (Input.IsKeyDown(InputKey.Q))
                 {
@@ -103,7 +100,6 @@ namespace SceneEditorExtras
                 }
             }
         }
-
     }
 
     public class SCE_EditorSpawn : ScriptComponentBehavior

@@ -3,7 +3,7 @@ using System;
 using TaleWorlds.Engine;
 using TaleWorlds.MountAndBlade;
 
-namespace SceneEditorExtras
+namespace SceneEditorHelpers
 {
     public enum PathNavigatorBehavior
     {
@@ -60,7 +60,7 @@ namespace SceneEditorExtras
             }
         }
 
-        //
+        
         private void Init()
         {
             entity = base.GameEntity;
