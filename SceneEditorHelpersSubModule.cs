@@ -96,7 +96,7 @@ namespace SceneEditorHelpers
                 if (Input.IsKeyPressed(InputKey.V))
                 {
                     if (mainHorse != null) mainHorse.TeleportToPosition(mainPlayer.Position);
-                    mainHorse.AgentVisuals.GetSkeleton().ResetCloths();
+                    if (mainHorse != null && mainHorse.AgentVisuals.GetSkeleton() != null) mainHorse.AgentVisuals.GetSkeleton().ResetCloths();
                 }
             }
         }
