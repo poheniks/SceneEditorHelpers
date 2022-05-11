@@ -91,7 +91,7 @@ namespace SceneEditorHelpers
                     if (teleFlag != null) mainPlayer.TeleportToPosition(teleFlag.GlobalPosition);
                     teleFlag.Remove(0);
                     teleFlag = null;
-                    if (mainHorse != null) mainHorse.AgentVisuals.GetSkeleton().ResetCloths();
+                    if (mainHorse != null && mainHorse.AgentVisuals.GetSkeleton() != null) mainHorse.AgentVisuals.GetSkeleton().ResetCloths();
                 }
                 if (Input.IsKeyPressed(InputKey.V))
                 {
@@ -104,6 +104,5 @@ namespace SceneEditorHelpers
 
     public class SCE_EditorSpawn : ScriptComponentBehavior
     {
-        //don't need anything here
     }
 }
