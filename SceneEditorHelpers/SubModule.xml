@@ -1,7 +1,7 @@
 ﻿<Module>
 	<Name value="SceneEditorHelpers"/>
 	<Id value="SceneEditorHelpers"/>
-	<Version value="e1.7.1"/>
+	<Version value="e1.8.0"/>
 	<DefaultModule value="false"/>
 	<SingleplayerModule value="true"/>
 	<MultiplayerModule value="false"/>
@@ -10,8 +10,6 @@
 		<DependedModule Id="Native"/>
 		<DependedModule Id="SandBoxCore"/>
 		<DependedModule Id="Sandbox"/>
-		<DependedModule Id="CustomBattle"/>
-		<DependedModule Id="StoryMode"/>
 	</DependedModules>
 	<SubModules>
 		<SubModule>

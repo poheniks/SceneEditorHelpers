@@ -36,11 +36,11 @@ namespace SceneEditorHelpers
             if (Agent.Main != null && !init)
             {
                 mainPlayer = Agent.Main;
-                mainPlayer.SetInvulnerable(true);
+                mainPlayer.ToggleInvulnerable();
                 if (mainPlayer.HasMount)
                 {
                     mainHorse = mainPlayer.MountAgent;
-                    mainHorse.SetInvulnerable(true);
+                    mainHorse.ToggleInvulnerable();
                 }
 
                 editorSpawn = Mission.Scene.GetFirstEntityWithScriptComponent<SCE_EditorSpawn>();
